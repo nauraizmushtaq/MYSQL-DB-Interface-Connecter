@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="740.0" prefWidth="997.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
+   <children>
+      
+            <SplitPane AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" dividerPositions="0.29797979797979796" layoutX="-1.0" prefHeight="740.0" prefWidth="997.0">
+              <items>
+                <AnchorPane fx:id="leftPane" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <ListView fx:id="DBlist" layoutY="157.0" prefHeight="293.0" prefWidth="200.0" />
+                        <Button fx:id="refreshDBbtn" layoutX="105.0" layoutY="126.0" mnemonicParsing="false" onAction="#refreshDBList" prefHeight="31.0" prefWidth="91.0" text="Refresh" />
+                        <Button fx:id="addDBbtn" layoutY="126.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="105.0" text="Add DB" />
+                        <ComboBox fx:id="DBMSList" layoutX="14.0" layoutY="14.0" prefWidth="150.0" promptText="Select DBMS" />
+                     </children>
+                  </AnchorPane>
+                <AnchorPane fx:id="mainPane" minHeight="0.0" minWidth="0.0" prefHeight="449.0" prefWidth="463.0" />
+              </items>
+            </SplitPane>
+         
+   </children>
+</AnchorPane>

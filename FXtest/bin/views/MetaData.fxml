@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<fx:root type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+		<Text fx:id="textView" strokeType="OUTSIDE" strokeWidth="0.0"
+			text="Text" />
+		<ListView fx:id="tablesList" prefHeight="200.0" prefWidth="200.0">
+			<contextMenu>
+				<ContextMenu fx:id="contextMenu">
+					<items>
+						<MenuItem mnemonicParsing="false" text="Unspecified Action" />
+					</items>
+				</ContextMenu>
+			</contextMenu>
+		</ListView>
+	</children>
+</fx:root>
